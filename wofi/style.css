@@ -1,0 +1,41 @@
+/* styling of all elements */
+* {
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+/* styling of the search bar */
+#input {
+    padding: 5px;
+    margin-bottom: 15px;
+    background-color: rgba(50, 50, 50, 0.5);
+    color: white;
+}
+
+/* styling of apps scroll area */
+#scroll {
+    font-size: 20px;
+    /* font-family: ""; /* Schriftart des gesamten menüs ändern*/
+    background-color: rgba(50, 50, 50, 0.9);
+    color: white;
+}
+
+/* styling of all entires */
+#entry {
+    padding: 5px;
+}
+image {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* styling of selected entry */
+#entry:selected {
+    background-color: #bbccdd;
+}
+
+#text:selected {
+    color: #333333;
+    padding-left: 15px;
+}
+
