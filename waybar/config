@@ -1,34 +1,43 @@
 {
     "layer": "top",
     "poition": "top",
-    "height": 30,
-    "spacing": 4,
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["network", "cpu", "memory", "battery", "tray"],
+    "margin-top": 14,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "height": 24,
+    "spacing": 0,
+
+    // Load modules
+    "include": ["~/.config/waybar/modules.json"],
     
-    "hyprland/workspaces": {
-        "format": "{name}",
-        "on-click": "activate"
-    },
+    "modules-left": [
+        "hyprland/window"
+    ],
+
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-right": [
+        "pulseaudio", 
+        "bluetooth", 
+        "battery", 
+        "group/hardware", 
+        "network", 
+        "clock",
+        "custom/exit",
+        "tray"
+    ],
     
-    "clock": {
-        "format": "{:%H:%M}"
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            "disk",
+            "cpu",
+            "memory"
+        ]
     },
-
-    "network": {
-        "format-wifi": "WiFi {signalStrength}%",
-        "format-ethernet": "ETH",
-        "format-disconnected": "Disconnected"
-    },
-
-    "cpu": {
-        "format": "CPU {usage}%"
-    },
-
-    "memory": {
-        "format": "MEM {}%"
-    }
 }
 
 

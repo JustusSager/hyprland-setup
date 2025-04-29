@@ -3,6 +3,8 @@
 !/foot/foot.ini
 !/hypr/hyprland.conf
 !/waybar/config
+!/waybar/modules.json
+!/waybar/style.css
 !/vim/vimrc
 !/wofi/config
 !/wofi/style.css
